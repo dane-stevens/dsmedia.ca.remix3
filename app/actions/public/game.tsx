@@ -13,13 +13,15 @@ export const Game = clientEntry(
     return () => {
       const winner = getWinner(board)
       return (
-        <div>
+        <div mix={
+          css({ width: '100%' })
+        }>
           <div mix={
             css({
               display: 'grid',
               gridTemplateColumns: '1fr 1fr 1fr',
               gap: '4px',
-              width: '400px',
+              width: '100%',
               background: 'var(--surface-4)'
             })
           }>
@@ -34,7 +36,7 @@ export const Game = clientEntry(
                     }),
                     css({
                       display: 'flex',
-                      fontSize: 'clamp(16px,4vw,120px)',
+                      fontSize: 'clamp(30px,4vw,120px)',
                       aspectRatio: '1/1',
                       background: 'var(--surface-0)',
                       border: 'none',

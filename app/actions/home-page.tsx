@@ -29,7 +29,6 @@ export function HomePage() {
           },
           '& *, & *::before, & *::after': { boxSizing: 'border-box' },
           margin: 0,
-          padding: '48px 24px',
           minHeight: '100vh',
           background: 'var(--surface-0)',
           color: 'var(--text-primary)',
@@ -51,6 +50,7 @@ export function HomePage() {
             flexDirection: 'column',
             alignItems: 'center',
             gap: '72px',
+            padding: '2rem'
           })}
         >
           <h1>Tic-Tac-Toe</h1>
@@ -121,7 +121,7 @@ function Footer() {
             '& svg': { width: '100%', height: '100%', display: 'block' },
           })}
         >
-          <a href="https://github.com/remix-run/remix" aria-label="GitHub">
+          <a href="https://github.com/dane-stevens" aria-label="GitHub">
             <GitHubIcon />
           </a>
         </nav>
